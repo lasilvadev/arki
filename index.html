@@ -42,240 +42,240 @@
                         <label><input name="projeto" type="radio" id="interiores" class="input-radio" value="interiores">Interiores</label>
                     </div>
                 </div>
-        </fieldset>
-
-        <fieldset>
-            <legend>Construção</legend>
-
-            <div class="form-elements">
-                <p>Paredes</p>
-                <div class="radio-elements">
-                    <label><input name="construction-paredes" type="radio" id="alvenaria-meia" class="input-radio" value="alvenaria-meia">Alvenaria Meia Vez</label>
-                    <label><input name="construction-paredes" type="radio" id="alvenaria-uma" class="input-radio" value="alvenaria-uma">Alvenaria Uma Vez</label>
-                    <label><input name="construction-paredes" type="radio" id="wall-madeira" class="input-radio" value="madeira">Madeira</label>
-                    <label><input name="construction-paredes" type="radio" id="drywall" class="input-radio" value="drywall">Drywall</label>
-                </div>
-            </div>
-
-
-            <div class="form-elements">
-                <p>Pilares <span class="clue">(Aparentes)</span></p>
-                <div class="radio-elements">
-                    <label><input name="construction-pilares" type="radio" id="pilar-concreto" class="input-radio" value="concreto-armado">Concreto Armado</label>
-                    <label><input name="construction-pilares" type="radio" id="pilar-madeira" class="input-radio" value="madeira">Madeira</label>
-                </div>
-            </div>
-
-            <div class="form-elements sub-element">
-                <label id="dimensoes-pilar" for="pilares">Dimensões do Pilar</label>
-                <input type="number" id="x" name="base" placeholder="X" required>
-                <input type="number" id="y" name="comprimento" placeholder="Y" required>
-            </div>
-
-            <div class="form-elements">
-                <p>Estrutura da Cobertura</p>
-                <div class="radio-elements">
-                    <label><input name="construction-cobertura" type="radio" id="cob-madeira" class="input-radio" value="madeira">Madeira</label>
-                    <label><input name="construction-cobertura" type="radio" id="cob-metalica" class="input-radio" value="metalica">Matálica</label>
-                </div>
-            </div>
-
-
-            <div class="form-elements">
-                <p>Tipo de Telha</p>
-                <select id="dropdown" name="telha" required>
-                  <option value="">Selecione o tipo de telha</option>
-                  <option value="telha-ceramica">Cerâmica</option>
-                  <option value="telha-esmaltada">Esmaltada</option>
-                  <option value="telha-concreto">Concreto</option>
-                  <option value="telha-fibrocimento">Fibrocimento</option>
-                  <option value="telha-pvc">PVC</option>
-                  <option value="telha-metal-ondulada">Metálica Ondulada</option>
-                  <option value="telha-metal-trapezoidal">Metálica Trapezoidal</option>
-                  <option value="telha-termoacustica">Termoacústica</option>
-                  <option value="telha-termoacustica-forro">Termoacústica tipo Forro</option>
-                  <option value="telha-vidro">Vidro</option>
-                  <option value="telha-translucida">Translúcida</option>
-                  <option value="telha-eco">Ecológica</option>
-                  <option value="telha-shingle">Shingle</option>
-                </select>
-            </div>
-
-            <div class="form-elements sub-element">
-                <p>Se termoacústica:</p>
-                <div class="radio-elements">
-                    <label><input name="termoacustica" type="radio" id="termo-ondulada" class="input-radio" value="ondulada">Ondulada</label>
-                    <label><input name="termoacustica" type="radio" id="termo-trapezoidal" class="input-radio" value="trapezoidal">Trapezoidal</label>
-                    <label><input name="termoacustica" type="radio" id="termo-colonial" class="input-radio" value="colonial">Colonial</label>
-                </div>
-            </div>
-
-            <div class="form-elements">
-                <label id="cob-inclinacao" for="inclinacao">Inclinação Específica <span class="clue">Se houver</span></label>
-                <input type="text" id="x" name="inclinacao" placeholder="%">
-            </div>
-
-            <div class="form-elements">
-                <label id="pe-direito" for="pe-direito">Pé-direito</label>
-                <input type="text" id="pe-direito" name="pe-direito" placeholder="Altura (m)">
-            </div>
-
-        </fieldset>
-        
-        <fieldset>
-            <legend>Revestimentos</legend>
-
-            <div class="form-elements">
-                <p>Pisos Internos</p>
-                <select id="dropdown" name="pisos-internos" required>
-                  <option value="">Selecione o tipo de piso</option>
-                  <option value="ceramico">Cerâmico</option>
-                  <option value="porcelanato">Porcelanato</option>
-                  <option value="madeira">Madeira</option>
-                  <option value="pedra">Pedra Natural</option>
-                  <option value="vinilico">Vinílico</option>
-                  <option value="laminado">Laminado</option>
-                  <option value="concreto">Concreto</option>
-                </select>
-            </div>
-
-            <div class="form-elements">
-                <p>Pisos Externos</p>
-                <select id="dropdown" name="pisos-externos" required>
-                  <option value="">Selecione o tipo de piso</option>
-                  <option value="ceramico">Cerâmico</option>
-                  <option value="porcelanato">Porcelanato</option>
-                  <option value="madeira">Madeira</option>
-                  <option value="madeira-sintetica">Madeira Sintética</option>
-                  <option value="pedra">Pedra Natural</option>
-                  <option value="vinilico">Vinílico</option>
-                  <option value="laminado">Laminado</option>
-                  <option value="concreto">Concreto</option>
-                  <option value="antiderrapante">Antiderrapante</option>
-                  <option value="intertravado">Intertravado</option>
-                </select>
-            </div>
-
-            <div class="form-elements sub-element">
-                <label id="outros-pisos" for="outros-pisos">Algum outro tipo de piso pontual?</label>
-                <input type="text" id="outros-pisos" name="outros-pisos" placeholder="Descreva o ambiente e o tipo de piso">
-            </div>
-
-            <div class="form-elements">
-                <p>Paredes <span class="clue">(Áreas Secas)</span></p>
-                <select id="dropdown" name="paredes-secas" required>
-                  <option value="">Selecione o tipo de piso</option>
-                  <option value="ceramico">Cerâmico</option>
-                  <option value="porcelanato">Porcelanato</option>
-                  <option value="acrilica">Pintura Acrílica</option>
-                  <option value="pedra">Pedra Natural</option>
-                  <option value="queimado">Cimento Queimado</option>
-                  <option value="pastilhas">Pastilhas</option>
-                  <option value="ripas">Ripas de Madeira</option>
-                </select>
-            </div>
-
-            <div class="form-elements">
-                <p>Paredes <span class="clue">(Áreas Molhadas)</span></p>
-                <select id="dropdown" name="paredes-molhadas" required>
-                  <option value="">Selecione o tipo de piso</option>
-                  <option value="ceramico">Cerâmico</option>
-                  <option value="porcelanato">Porcelanato</option>
-                  <option value="acrilica">Pintura Acrílica</option>
-                  <option value="pedra">Pedra Natural</option>
-                  <option value="queimado">Cimento Queimado</option>
-                  <option value="pastilhas">Pastilhas</option>
-                  <option value="ripas">Ripas de Madeira</option>
-                </select>
-            </div>
+            </fieldset>
             
-            <div class="form-elements">
-                <p>Forro <span class="clue">(Geral)</span></p>
-                <select id="dropdown" name="paredes-molhadas" required>
-                    <option value="">Selecione o tipo de piso</option>
-                    <option value="forro-pvc">PVC</option>
-                    <option value="forro-laje">Laje com Pintura Acrílica</option>
-                    <option value="forro-gesso">Gesso</option>
-                    <option value="forro-placas">Placas</option>
-                    <option value="forro-sem">Sem forro</option>                   
-                </select>
-            </div>
+            <fieldset>
+                <legend>Construção</legend>
 
-            <div class="form-elements sub-element">
-                <label id="outros-forros" for="outros-forros">Algum outro tipo de forro pontual?</label>
-                <input type="text" id="outros-forros" name="outros-forros" placeholder="Descreva o ambiente e o tipo de forro">
-            </div>
-        </fieldset>
+                <div class="form-elements">
+                    <p>Paredes</p>
+                    <div class="radio-elements">
+                        <label><input name="construction-paredes" type="radio" id="alvenaria-meia" class="input-radio" value="alvenaria-meia">Alvenaria Meia Vez</label>
+                        <label><input name="construction-paredes" type="radio" id="alvenaria-uma" class="input-radio" value="alvenaria-uma">Alvenaria Uma Vez</label>
+                        <label><input name="construction-paredes" type="radio" id="wall-madeira" class="input-radio" value="madeira">Madeira</label>
+                        <label><input name="construction-paredes" type="radio" id="drywall" class="input-radio" value="drywall">Drywall</label>
+                    </div>
+                </div>
 
-        <fieldset>
-            <legend>Esquadrias</legend>
 
-            <div class="form-elements">
-                <p>Portas</p>
-                <label for="portas-abrir"><input name="portas" type="checkbox" value="abrir" class="input-checkbox">Abrir</label>
-                <input type="text" id="portas-abrir" name="portas-abrir" placeholder="Ambientes">
+                <div class="form-elements">
+                    <p>Pilares <span class="clue">(Aparentes)</span></p>
+                    <div class="radio-elements">
+                        <label><input name="construction-pilares" type="radio" id="pilar-concreto" class="input-radio" value="concreto-armado">Concreto Armado</label>
+                        <label><input name="construction-pilares" type="radio" id="pilar-madeira" class="input-radio" value="madeira">Madeira</label>
+                    </div>
+                </div>
 
-                <label for="portas-correr"><input name="portas" type="checkbox" value="correr" class="input-checkbox">Correr</label>
-                <input type="text" id="portas-correr" name="portas-correr" placeholder="Ambientes">
+                <div class="form-elements sub-element">
+                    <label id="dimensoes-pilar" for="pilares">Dimensões do Pilar</label>
+                    <input type="number" id="x" name="base" placeholder="X" required>
+                    <input type="number" id="y" name="comprimento" placeholder="Y" required>
+                </div>
 
-                <label for="portas-basculante"><input name="portas" type="checkbox" value="basculante" class="input-checkbox">Basculante</label>
-                <input type="text" id="portas-basculante" name="portas-basculante" placeholder="Ambientes">
-            </div>
+                <div class="form-elements">
+                    <p>Estrutura da Cobertura</p>
+                    <div class="radio-elements">
+                        <label><input name="construction-cobertura" type="radio" id="cob-madeira" class="input-radio" value="madeira">Madeira</label>
+                        <label><input name="construction-cobertura" type="radio" id="cob-metalica" class="input-radio" value="metalica">Matálica</label>
+                    </div>
+                </div>
 
-            <div class="form-elements">
-                <p>Janelas</p>
-                <label for="janelas-abrir"><input name="janelas" type="checkbox" value="abrir" class="input-checkbox">Abrir</label>
-                <input type="text" id="janelas-abrir" name="janelas-abrir" placeholder="Ambientes">
 
-                <label for="janelas-correr"><input name="janelas" type="checkbox" value="correr" class="input-checkbox">Correr</label>
-                <input type="text" id="janelas-correr" name="janelas-correr" placeholder="Ambientes">
+                <div class="form-elements">
+                    <p>Tipo de Telha</p>
+                    <select id="dropdown" name="telha" required>
+                    <option value="">Selecione o tipo de telha</option>
+                    <option value="telha-ceramica">Cerâmica</option>
+                    <option value="telha-esmaltada">Esmaltada</option>
+                    <option value="telha-concreto">Concreto</option>
+                    <option value="telha-fibrocimento">Fibrocimento</option>
+                    <option value="telha-pvc">PVC</option>
+                    <option value="telha-metal-ondulada">Metálica Ondulada</option>
+                    <option value="telha-metal-trapezoidal">Metálica Trapezoidal</option>
+                    <option value="telha-termoacustica">Termoacústica</option>
+                    <option value="telha-termoacustica-forro">Termoacústica tipo Forro</option>
+                    <option value="telha-vidro">Vidro</option>
+                    <option value="telha-translucida">Translúcida</option>
+                    <option value="telha-eco">Ecológica</option>
+                    <option value="telha-shingle">Shingle</option>
+                    </select>
+                </div>
 
-                <label for="janelas-basculante"><input name="janelas" type="checkbox" value="basculante" class="input-checkbox">Basculante</label>
-                <input type="text" id="janelas-basculante" name="janelas-basculante" placeholder="Ambientes">
-            </div>
+                <div class="form-elements sub-element">
+                    <p>Se termoacústica:</p>
+                    <div class="radio-elements">
+                        <label><input name="termoacustica" type="radio" id="termo-ondulada" class="input-radio" value="ondulada">Ondulada</label>
+                        <label><input name="termoacustica" type="radio" id="termo-trapezoidal" class="input-radio" value="trapezoidal">Trapezoidal</label>
+                        <label><input name="termoacustica" type="radio" id="termo-colonial" class="input-radio" value="colonial">Colonial</label>
+                    </div>
+                </div>
 
-            <div class="form-elements">
-                <p>Material <span class="clue">(Portas)</span></p>
-                <select id="dropdown" name="material-portas" required>
-                    <option value="">Selecione o tipo de material</option>
-                    <option value="porta-madeira">Madeira</option>
-                    <option value="porta-metal">Metálica Veneziana</option>
-                    <option value="porta-pvc">PVC</option>
-                    <option value="porta-vidro">Vidro</option>
-                </select>
-            </div>
+                <div class="form-elements">
+                    <label id="cob-inclinacao" for="inclinacao">Inclinação Específica <span class="clue">Se houver</span></label>
+                    <input type="text" id="x" name="inclinacao" placeholder="%">
+                </div>
 
-            <div class="form-elements sub-element">
-                <label id="outras-portas" for="outras-portas">Algum outro tipo de material?</label>
-                <input type="text" id="outras-portas" name="outras-portas" placeholder="Descreva o ambiente e o tipo de material da porta">
-            </div>
+                <div class="form-elements">
+                    <label id="pe-direito" for="pe-direito">Pé-direito</label>
+                    <input type="text" id="pe-direito" name="pe-direito" placeholder="Altura (m)">
+                </div>
 
-            <div class="form-elements">
-                <p>Material <span class="clue">(Janelas)</span></p>
-                <select id="dropdown" name="material-janelas" required>
-                    <option value="">Selecione o tipo de material</option>
-                    <option value="janela-madeira">Madeira</option>
-                    <option value="janela-metal">Metálica Veneziana</option>
-                    <option value="janela-pvc">PVC</option>
-                    <option value="janela-vidro">Vidro</option>
-                </select>
-            </div>
-
-            <div class="form-elements sub-element">
-                <label id="outras-janelas" for="outras-janelas">Algum outro tipo de material?</label>
-                <input type="text" id="outras-janelas" name="outras-janelas" placeholder="Descreva o ambiente e o tipo de material da porta">
-            </div>
-        </fieldset>
-
-        <fieldset>
-            <legend>Informações Adicionais?</legend>
-
-            <div class="form-elements">
-                <textarea id="comments" class="input-textarea" name="comment" placeholder="Informações adicios para elaboração do projeto..." rows="7" cols="25"></textarea>
-              </div>
-        </fieldset>
+            </fieldset>
         
-        <input type="submit" value="Submit" />
+            <fieldset>
+                <legend>Revestimentos</legend>
+
+                <div class="form-elements">
+                    <p>Pisos Internos</p>
+                    <select id="dropdown" name="pisos-internos" required>
+                    <option value="">Selecione o tipo de piso</option>
+                    <option value="ceramico">Cerâmico</option>
+                    <option value="porcelanato">Porcelanato</option>
+                    <option value="madeira">Madeira</option>
+                    <option value="pedra">Pedra Natural</option>
+                    <option value="vinilico">Vinílico</option>
+                    <option value="laminado">Laminado</option>
+                    <option value="concreto">Concreto</option>
+                    </select>
+                </div>
+
+                <div class="form-elements">
+                    <p>Pisos Externos</p>
+                    <select id="dropdown" name="pisos-externos" required>
+                    <option value="">Selecione o tipo de piso</option>
+                    <option value="ceramico">Cerâmico</option>
+                    <option value="porcelanato">Porcelanato</option>
+                    <option value="madeira">Madeira</option>
+                    <option value="madeira-sintetica">Madeira Sintética</option>
+                    <option value="pedra">Pedra Natural</option>
+                    <option value="vinilico">Vinílico</option>
+                    <option value="laminado">Laminado</option>
+                    <option value="concreto">Concreto</option>
+                    <option value="antiderrapante">Antiderrapante</option>
+                    <option value="intertravado">Intertravado</option>
+                    </select>
+                </div>
+
+                <div class="form-elements sub-element">
+                    <label id="outros-pisos" for="outros-pisos">Algum outro tipo de piso pontual?</label>
+                    <input type="text" id="outros-pisos" name="outros-pisos" placeholder="Descreva o ambiente e o tipo de piso">
+                </div>
+
+                <div class="form-elements">
+                    <p>Paredes <span class="clue">(Áreas Secas)</span></p>
+                    <select id="dropdown" name="paredes-secas" required>
+                    <option value="">Selecione o tipo de piso</option>
+                    <option value="ceramico">Cerâmico</option>
+                    <option value="porcelanato">Porcelanato</option>
+                    <option value="acrilica">Pintura Acrílica</option>
+                    <option value="pedra">Pedra Natural</option>
+                    <option value="queimado">Cimento Queimado</option>
+                    <option value="pastilhas">Pastilhas</option>
+                    <option value="ripas">Ripas de Madeira</option>
+                    </select>
+                </div>
+
+                <div class="form-elements">
+                    <p>Paredes <span class="clue">(Áreas Molhadas)</span></p>
+                    <select id="dropdown" name="paredes-molhadas" required>
+                    <option value="">Selecione o tipo de piso</option>
+                    <option value="ceramico">Cerâmico</option>
+                    <option value="porcelanato">Porcelanato</option>
+                    <option value="acrilica">Pintura Acrílica</option>
+                    <option value="pedra">Pedra Natural</option>
+                    <option value="queimado">Cimento Queimado</option>
+                    <option value="pastilhas">Pastilhas</option>
+                    <option value="ripas">Ripas de Madeira</option>
+                    </select>
+                </div>
+                
+                <div class="form-elements">
+                    <p>Forro <span class="clue">(Geral)</span></p>
+                    <select id="dropdown" name="paredes-molhadas" required>
+                        <option value="">Selecione o tipo de piso</option>
+                        <option value="forro-pvc">PVC</option>
+                        <option value="forro-laje">Laje com Pintura Acrílica</option>
+                        <option value="forro-gesso">Gesso</option>
+                        <option value="forro-placas">Placas</option>
+                        <option value="forro-sem">Sem forro</option>                   
+                    </select>
+                </div>
+
+                <div class="form-elements sub-element">
+                    <label id="outros-forros" for="outros-forros">Algum outro tipo de forro pontual?</label>
+                    <input type="text" id="outros-forros" name="outros-forros" placeholder="Descreva o ambiente e o tipo de forro">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Esquadrias</legend>
+
+                <div class="form-elements">
+                    <p>Portas</p>
+                    <label for="portas-abrir"><input name="portas" type="checkbox" value="abrir" class="input-checkbox">Abrir</label>
+                    <input type="text" id="portas-abrir" name="portas-abrir" placeholder="Ambientes">
+
+                    <label for="portas-correr"><input name="portas" type="checkbox" value="correr" class="input-checkbox">Correr</label>
+                    <input type="text" id="portas-correr" name="portas-correr" placeholder="Ambientes">
+
+                    <label for="portas-basculante"><input name="portas" type="checkbox" value="basculante" class="input-checkbox">Basculante</label>
+                    <input type="text" id="portas-basculante" name="portas-basculante" placeholder="Ambientes">
+                </div>
+
+                <div class="form-elements">
+                    <p>Janelas</p>
+                    <label for="janelas-abrir"><input name="janelas" type="checkbox" value="abrir" class="input-checkbox">Abrir</label>
+                    <input type="text" id="janelas-abrir" name="janelas-abrir" placeholder="Ambientes">
+
+                    <label for="janelas-correr"><input name="janelas" type="checkbox" value="correr" class="input-checkbox">Correr</label>
+                    <input type="text" id="janelas-correr" name="janelas-correr" placeholder="Ambientes">
+
+                    <label for="janelas-basculante"><input name="janelas" type="checkbox" value="basculante" class="input-checkbox">Basculante</label>
+                    <input type="text" id="janelas-basculante" name="janelas-basculante" placeholder="Ambientes">
+                </div>
+
+                <div class="form-elements">
+                    <p>Material <span class="clue">(Portas)</span></p>
+                    <select id="dropdown" name="material-portas" required>
+                        <option value="">Selecione o tipo de material</option>
+                        <option value="porta-madeira">Madeira</option>
+                        <option value="porta-metal">Metálica Veneziana</option>
+                        <option value="porta-pvc">PVC</option>
+                        <option value="porta-vidro">Vidro</option>
+                    </select>
+                </div>
+
+                <div class="form-elements sub-element">
+                    <label id="outras-portas" for="outras-portas">Algum outro tipo de material?</label>
+                    <input type="text" id="outras-portas" name="outras-portas" placeholder="Descreva o ambiente e o tipo de material da porta">
+                </div>
+
+                <div class="form-elements">
+                    <p>Material <span class="clue">(Janelas)</span></p>
+                    <select id="dropdown" name="material-janelas" required>
+                        <option value="">Selecione o tipo de material</option>
+                        <option value="janela-madeira">Madeira</option>
+                        <option value="janela-metal">Metálica Veneziana</option>
+                        <option value="janela-pvc">PVC</option>
+                        <option value="janela-vidro">Vidro</option>
+                    </select>
+                </div>
+
+                <div class="form-elements sub-element">
+                    <label id="outras-janelas" for="outras-janelas">Algum outro tipo de material?</label>
+                    <input type="text" id="outras-janelas" name="outras-janelas" placeholder="Descreva o ambiente e o tipo de material da porta">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informações Adicionais?</legend>
+
+                <div class="form-elements">
+                    <textarea id="comments" class="input-textarea" name="comment" placeholder="Informações adicios para elaboração do projeto..." rows="7" cols="25"></textarea>
+                </div>
+            </fieldset>
+            
+            <input type="submit" value="Submit" />
         </form>
 
     </div>
