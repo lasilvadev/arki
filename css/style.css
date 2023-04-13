@@ -1,5 +1,23 @@
 /*  fonts  */
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;600&family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+:root{
+    --color-primary: #4576a7;
+    --color-secondary: #a1e9c0;
+    --color-terciary: #bbefd2;
+    --color-bg-op1: #f6f6f6;
+    --color-text: #54595e;
+
+    --gradient-1: linear-gradient(90deg, var(--color-primary) 0,var(--color-secondary) 51%,var(--color-primary));
+    --gradient-2: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+
+    --transition: all 400ms ease;
+    --transition-1: 0.15s ease;
+    --transition-2: 0.35s ease;
+
+    --shadow: 0 5px 10px 1px hsla(0, 0%, 0%, 0.1);
+}
 
 *{
     box-sizing: border-box;
@@ -10,12 +28,13 @@
 body{
     padding: 0;
     margin: 0;
-    font-family: 'Dosis', sans-serif;
-    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    background-image: var(--gradient-2);
+    color: var(--color-text);
 }
 
 .container{
-    width: 60%;
+    width: 70%;
     margin: auto;
     padding: 60px 0;
 }
@@ -32,68 +51,83 @@ body{
     margin-bottom: 10px;
     font-size: 45px;
     line-height: 50px;
+    color: white;
 }
 
 .header .description {
     margin: 0 0 30px 0;
+    color: white;
 }
 
 /* == Arki Form == */
 fieldset{
     border: none;
-    background-color: #f6f6f6;
+    background-color: var(--color-bg-op1);
     margin-bottom: 30px;
     border-radius: 15px;
     align-items: center;
     align-content: center;
-    padding: 30px 10px;
+    padding: 35px 20px;
+    box-shadow: var(--shadow);
 }
 
 fieldset legend{
     font-family: 'Noto Serif';
     padding: 5px 15px;
-    background-color: rgb(221, 221, 221);
+    background-color: var(--color-primary);
     border-radius: 15px;
     margin-left: 25px;
+    color: white;
+    font-size: 14px;
 }
+
 
 /* elements */
 .form-elements{
-    padding: 0 20px;
+    padding: 0 30px;
     display: flex;
-    flex-direction: column;  
+    flex-direction: column; 
+    margin-bottom: 10px;
 }
 
 .form-elements label{
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
+
+label#proprietario,
+label#cpf-cnpj{
+    font-weight: 600;
+}
+
 .form-elements input{
     background-color: white;
     border: 1px solid #d2d2d2;
     padding: 8px 15px;
     border-radius: 15px;
-    margin-bottom: 30px;
 }
 
-.form-elements p{
-    margin-bottom: 8px;
-    background-color: #e9e9e9;
+.form-elements p,
+.form-elements label{
     border-radius: 15px;
-    padding: 3px 15px;
+    padding: 0 15px;
+    font-weight: 600;
 }
 
-.form-elements p span{
-    font-size: 14px;
+.form-elements p span,
+.form-elements label span{
+    font-size: 10px;
     transform: translateY(-8px);
 }
-
-.form-elements
 
 .form-elements .radio-elements{
     margin-bottom: 5px;
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
+}
+
+.form-elements .radio-elements label{
+    font-weight: 400;
 }
 
 .input-radio{
@@ -110,21 +144,86 @@ fieldset legend{
 }
 
 .sub-element{
-    width: fit-content;
-    margin-left: 25px;
-}
-
-.sub-element p{
-    background-color: none;
-}
-
-.sub-element p::before{
-    content: '';
-    height: 1px;
-    width: 25px;
-    background-color: #e9e9e9;
+    width: 65%;
+    margin: auto;
+    background-color: #ececec;
+    padding: 15px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    transform: translateY(-10px);
+    align-items: center;
 }
 
 .sub-element .radio-elements{
     display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 !important;
+    width: 100%;
+}
+
+.sub-element label,
+.sub-emelent p,
+.sub-element .radio-elements label{
+    font-size: 12px;
+}
+
+.sub-element input{
+    width: 100%;
+}
+
+.inputs-pilar {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    justify-content: space-around;
+}
+
+.inputs-pilar input{
+    margin-bottom: 5px;
+}
+
+/* REVESTIMENTOS */
+
+.revestimentos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start
+}
+
+.revestimentos .sub-element{
+    width: 90%;
+}
+
+.forro{
+    grid-column: 1/3;
+}
+
+/* ESQUADRIAS */
+.esquadrias{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start
+}
+
+.esquadrias .form-elements:nth-child(1) p{
+    text-align: center;
+    font-size: 16px;
+    background-color: #c5dbbe69;
+    padding: 3px;
+    margin-bottom: 15px;
+}
+
+.esquadrias .sub-element{
+    width: 90%;
+}
+
+.esquadrias .input-checkbox{
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.esquadrias .material{
+    margin-top: 30px;
 }
