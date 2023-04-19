@@ -8,21 +8,39 @@
 
     <!-- STYLE CSS -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    
 
 
 
 </head>
+
 <body>
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <div class="scrollToTop-btn flex-center active">
+        <i class="fas fa-arrow-up"></i>
+        </div>
     <div class="splash"></div>
+
+    <!-- MAIN -->
     <div class="container">
+        <!-- HEADER -->
         <div class="header">
             <h1 class="title">ARKI</h1>
             <p class="description">Formulário para elaboração de Projeto Arquitetônico</p>
         </div>
 
+        <!-- FORMULÁRIO -->
         <form class="arki-form" method="post" action="submit">
             <fieldset class="top">
                 <legend>Identificação</legend>
+                <div class="form-elements">
+                    <label id="responsavel" for="responsavel">Responsável Técnico</label>
+                    <input type="text" id="responsavel" name="responsavel" placeholder="Qual o nome completo do responsável técnico?" required>
+                </div>
+
                 <div class="form-elements">
                     <label id="proprietario" for="proprietario">Proprietário</label>
                     <input type="text" id="proprietario" name="proprietario" placeholder="Qual o nome completo do proprietário?" required>
@@ -290,15 +308,27 @@
                 <legend>Informações Adicionais?</legend>
 
                 <div class="form-elements">
-                    <textarea id="comments" class="input-textarea" name="comment" placeholder="Informações adicios para elaboração do projeto..." rows="7" cols="25"></textarea>
+                    <textarea id="comments" class="input-textarea" name="comment" placeholder="Descreva aqui as informações adicionais para a elaboração do projeto..." rows="7" cols="25"></textarea>
                 </div>
             </fieldset>
             
-            <input type="submit" value="Submit" />
+            <input class="btn" type="submit" value="ENVIAR FORMULÁRIO" />
         </form>
 
     </div>
-    
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            
+        <div class="footer-copyright group">
+            <p>ARKI | Copyright © 2023 by Larissa Silva | All rights reserved.</p>
+        </div>
+        </div>
+    </footer>
+
+     <!-- External Scripts -->
+     <script src="./js/main.js"></script>
     
 </body>
 </html>
