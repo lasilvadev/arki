@@ -245,6 +245,8 @@ label#cpf-cnpj{
     padding: 8px 15px;
     border-radius: 15px;
     margin-bottom: 20px;
+    color: var(--color-text);
+    font-size: 14px;
 }
 
 .sub-element{
