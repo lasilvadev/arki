@@ -26,3 +26,6 @@ Crafting Arki Form was a pivotal endeavor aimed at optimizing the initial stages
 
 ## Live App
 Explore the live Arki Form application [here](https://arkii.netlify.app/).
+
+### Author
+Larissa Silva | [LinkedIn](https://www.linkedin.com/in/mslarissasilva/)  |  [Instagram](https://www.instagram.com/lali.codes/)
