@@ -258,6 +258,7 @@ label#cpf-cnpj{
     margin-bottom: 20px;
     transform: translateY(-10px);
     align-items: center;
+    margin-top: 20px;
 }
 
 .sub-element .radio-elements{
