@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-   
+
 </head>
 
 <body>
@@ -64,10 +64,27 @@
                     </div>
                 </div>
             </fieldset>
+
+            <fieldset class="top">
+                <legend>Localização</legend>
+                <div class="form-elements">
+                    <label id="endereco" for="endereco">Endereço</label>
+                    <input type="text" id="endereco" name="endereco" placeholder="Inserir logradouro, quadra e lote" required>
+                </div>
+
+                <div class="form-elements">
+                    <label id="bairro" for="bairro">Bairro</label>
+                    <input type="text" id="bairro" name="bairro" placeholder="Qual o bairro do projeto?" required>
+                </div>
+
+                <div class="form-elements">
+                    <label id="cidade" for="cidade">Cidade</label>
+                    <input type="text" id="cidade" name="cidade" placeholder="Qual a cidade do projeto?" required>
+                </div>
+            </fieldset>
             
             <fieldset class="construction">
                 <legend>Construção</legend>
-
                 <div class="form-elements">
                     <p>Paredes</p>
                     <div class="radio-elements">
